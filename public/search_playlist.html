@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>搜索歌单</title>
+</head>
+
+<body>
+  <input type="search" results="s" placeholder="纯音乐" id="search">
+  <input type="submit" value="搜索歌单" id="submit">
+  <div id="info" class="info"></div>
+  <script src="https://cdn.jsdelivr.net/npm/axios@0.26.1/dist/axios.min.js"></script>
+  <script type="text/javascript" src="/script/search_playlist.js"></script>
+  <style>
+    html,
+    body {
+      height: 100vh;
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      text-align: center;
+      margin-top: 30px;
+      overflow: hidden;
+    }
+
+    * {
+      color: rgb(100, 100, 100);
+    }
+
+    input[type=search] {
+      width: 30%;
+      border-color: gray;
+    }
+    input[type=submit] {
+      width: auto;
+      background-color: yellow;
+    }
+    input {
+      height: auto;
+      font-size: x-large;
+      border-radius: 7px;
+    }
+  </style>
+</body>
+
+</html>
